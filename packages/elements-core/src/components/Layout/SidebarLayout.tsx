@@ -1,4 +1,4 @@
-import { faRightLeft } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faRightLeft } from '@fortawesome/free-solid-svg-icons';
 import { Box, Flex, Icon } from '@stoplight/mosaic';
 import * as React from 'react';
 import { useLocation } from 'react-router-dom';
@@ -48,7 +48,21 @@ export const SidebarLayout = React.forwardRef<HTMLDivElement, SidebarLayoutProps
               minWidth: `${SIDEBAR_MIN_WIDTH}px`,
             }}
           >
+            <Box
+              as={Icon}
+              icon={faBars}
+              size="lg"
+              style={{ width: `${currentSidebarWidth}px`, cursor: 'pointer' }}
+              onClick={foldSidebar}
+            />
             {sidebar}
+            <Box
+              as={Icon}
+              icon={faBars}
+              size="lg"
+              style={{ width: `${currentSidebarWidth}px`, cursor: 'pointer' }}
+              onClick={foldSidebar}
+            />
           </Flex>
           <Flex
             justifySelf="end"
