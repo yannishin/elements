@@ -23,7 +23,7 @@ export const PoweredByLink: React.FC<{
       <Box as={Icon} icon={faBolt} mr={1} className="fa-fw" style={{ color: 'rgba(144, 97, 249, 1)' }} />
 
       <Box>
-        powered by&nbsp;<strong>Stoplight</strong>
+        powered by&nbsp;<strong>Stoplight(나온소프트)</strong>
       </Box>
     </Flex>
   );
